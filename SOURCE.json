@@ -1,0 +1,10 @@
+{
+  "source": "dispatch-ui-0.1-free-sample.zip",
+  "sha256": "a0bf6d637e088414395515c96e8878ab67d27059dc6bab59433f72310797a98b",
+  "runtime_files_changed": false,
+  "repository_changes": [
+    "README replaced",
+    "LICENSE renamed and copied into reusable folder",
+    "Git housekeeping and preview added"
+  ]
+}

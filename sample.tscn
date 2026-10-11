@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Theme" path="res://dispatch/themes/day.tres" id="theme"]
+[ext_resource type="PackedScene" path="res://dispatch/components/pause_menu.tscn" id="menu"]
+[ext_resource type="Script" path="res://sample.gd" id="script"]
+[node name="Sample" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("theme")
+script = ExtResource("script")
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"DispatchBackground"
+[node name="Center" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+[node name="Contents" type="VBoxContainer" parent="Center"]
+layout_mode = 2
+[node name="Heading" type="Label" parent="Center/Contents"]
+layout_mode = 2
+theme_type_variation = &"DispatchHeading"
+text = "DISPATCH / FREE SAMPLE"
+horizontal_alignment = 1
+[node name="PauseMenu" parent="Center/Contents" instance=ExtResource("menu")]
+layout_mode = 2
+[node name="Status" type="Label" parent="Center/Contents"]
+custom_minimum_size = Vector2(550, 48)
+layout_mode = 2
+theme_type_variation = &"DispatchMuted"
+text = "Day theme + pause scene. Native, editable Godot UI."
+horizontal_alignment = 1
+autowrap_mode = 2

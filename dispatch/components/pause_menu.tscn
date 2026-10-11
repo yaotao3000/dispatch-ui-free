@@ -1,0 +1,44 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://dispatch/components/pause_menu.gd" id="script"]
+
+[node name="PauseMenu" type="PanelContainer"]
+custom_minimum_size = Vector2(300, 0)
+script = ExtResource("script")
+
+[node name="Contents" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Eyebrow" type="Label" parent="Contents"]
+layout_mode = 2
+theme_type_variation = &"DispatchMuted"
+text = "CONTROL / 01"
+
+[node name="Heading" type="Label" parent="Contents"]
+layout_mode = 2
+theme_type_variation = &"DispatchHeading"
+text = "On standby."
+
+[node name="Body" type="Label" parent="Contents"]
+layout_mode = 2
+text = "All systems ready.\nContinue when you are."
+
+[node name="Space" type="Control" parent="Contents"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Resume" type="Button" parent="Contents"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Resume mission"
+
+[node name="Settings" type="Button" parent="Contents"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "Settings"
+
+[node name="Exit" type="Button" parent="Contents"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "End session"
