@@ -8,6 +8,8 @@ A small, editable pause-menu scene and day Theme for Godot 4.6+, with five SVG c
 
 ## Try the sample
 
+[Run the free browser preview](https://yaotao3000.github.io/dispatch-ui-free/) without installing Godot. It runs the actual sample; buttons show their emitted signals. The first load downloads about 40 MB and requires WebAssembly and WebGL 2. For editable source, follow the steps below.
+
 1. Download the source ZIP from Releases and extract it.
 2. Import `project.godot` in Godot 4.6 stable or 4.7.2 stable.
 3. Press F5. Use Tab / Shift+Tab to move focus and Enter / Space to activate a button. The status text shows the emitted signal.
@@ -26,7 +28,7 @@ The menu extends `PanelContainer`, so you can place it in your own layout. Keep 
 
 ## Compatibility and scope
 
-Verified on macOS / Apple M1 using the Compatibility renderer with Godot 4.6 stable and 4.7.2 stable. Checks cover fresh ZIP import, the sample's focus/signal self-check and actual rendered output. The larger kit also passed clean-project integration and engine-generated keyboard events. These checks do not establish support for Windows, Linux, Web, mobile, gamepads or exported builds. Physical keyboard input was not separately verified.
+Verified on macOS / Apple M1 using the Compatibility renderer with Godot 4.6 stable and 4.7.2 stable. Checks cover fresh ZIP import, the sample's focus/signal self-check and actual rendered output. The larger kit also passed clean-project integration and engine-generated keyboard events. The free sample Web preview was also checked in desktop Chrome on the same Mac: all three buttons, Tab / Shift+Tab focus and Enter / Space activation worked through automated native input. These checks do not establish support for Windows, Linux, other browsers, mobile, gamepads or full-kit exported builds. Human physical keyboard input was not separately verified.
 
 The sample uses a 960×640 canvas with canvas scaling. The host game provides pause state, preferences, audio changes, saving and quitting.
 
