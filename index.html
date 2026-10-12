@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dispatch UI — Free pause-menu preview</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #eee8da; color: #202e3c; font: 16px/1.6 system-ui, sans-serif; }
+main { max-width: 1008px; margin: 0 auto; padding: 32px 24px; }
+h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.2; margin: 8px 0 16px; }
+p { max-width: 760px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 20px 0; }
+a { color: #1e405a; text-underline-offset: 4px; }
+a:focus-visible, button:focus-visible { outline: 3px solid #b45321; outline-offset: 4px; }
+.player { aspect-ratio: 3/2; background: #202e3c; display: grid; place-items: center; border-radius: 8px; overflow: hidden; }
+button { cursor: pointer; font: inherit; font-weight: 700; color: #202e3c; background: #f4ecdc; border: 2px solid #d7753b; padding: 14px 24px; border-radius: 5px; }
+iframe { width: 100%; height: 100%; border: 0; }
+small { display: block; margin-top: 20px; }
+</style>
+<main>
+<div class="eyebrow">Dispatch UI · Free sample</div>
+<h1>Try the pause menu in your browser.</h1>
+<p>This is the actual Godot sample: an editable pause menu, a day theme and five SVG control icons. Activate a button to see its signal in the status text.</p>
+<nav aria-label="Free source and feedback">
+<a href="https://github.com/yaotao3000/dispatch-ui-free">Free source &amp; setup steps</a>
+<a href="https://github.com/yaotao3000/dispatch-ui-free/issues">Report an integration problem</a>
+</nav>
+<div class="player" id="player"><button id="start" type="button">Run free sample</button></div>
+<p>Click inside the preview, then use Tab / Shift+Tab and Enter / Space, or click the buttons. Your game supplies pause state, settings, saving and quitting. This preview demonstrates the menu and its signals.</p>
+<small>Made with AI assistance for code, styling, SVG icons and documentation. The free sample uses the <a href="LICENSE.txt">MIT license</a>. This preview runs Godot 4.7.2; see its <a href="GODOT_LICENSE.txt">license</a> and <a href="GODOT_COPYRIGHT.txt">third-party notices</a>. WebAssembly and WebGL 2 are required.</small>
+</main>
+<script>
+document.getElementById('start').addEventListener('click', () => {
+  const frame = document.createElement('iframe');
+  frame.src = 'demo/index.html';
+  frame.title = 'Dispatch UI free Godot pause-menu sample';
+  frame.allow = 'fullscreen';
+  document.getElementById('player').replaceChildren(frame);
+});
+</script>
+</html>
