@@ -10,7 +10,7 @@ A small, editable pause-menu scene and day Theme for Godot 4.6+, with five SVG c
 
 [Run the free browser preview](https://yaotao3000.github.io/dispatch-ui-free/) without installing Godot. It runs the actual sample; buttons show their emitted signals. The first load downloads about 40 MB and requires WebAssembly and WebGL 2. For editable source, follow the steps below.
 
-1. Download the source ZIP from Releases and extract it.
+1. [Download the free source ZIP](https://github.com/yaotao3000/dispatch-ui-free/releases/download/0.1.0/dispatch-ui-free-0.1.0.zip) and extract it.
 2. Import `project.godot` in Godot 4.6 stable or 4.7.2 stable.
 3. Press F5. Use Tab / Shift+Tab to move focus and Enter / Space to activate a button. The status text shows the emitted signal.
 
@@ -35,6 +35,10 @@ The sample uses a 960×640 canvas with canvas scaling. The host game provides pa
 ## Optional full kit
 
 [Dispatch UI on itch.io](https://yaotao3000.itch.io/dispatch-ui?utm_source=github&utm_medium=readme&utm_campaign=dispatch-free) costs US$4.90 or more. It adds a night Theme, title menu, preferences panel, confirmation dialog, complete showcase and integration guide. You do not need the full kit to use this sample.
+
+## More Godot examples from Small Hours
+
+Building a 2D map? The [clickable map markers tutorial and free Godot project](https://small-hours-assets.vercel.app/guides/godot-map-markers?utm_source=github_dispatch_map) include four PNG markers and show how to update a label when a marker is clicked.
 
 ## License, provenance and feedback
 
