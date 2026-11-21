@@ -40,6 +40,8 @@ The sample uses a 960×640 canvas with canvas scaling. The host game provides pa
 
 Building a 2D map? The [clickable map markers tutorial and free Godot project](https://small-hours-assets.vercel.app/guides/godot-map-markers?utm_source=github_dispatch_map) include four PNG markers and show how to update a label when a marker is clicked.
 
+**Putting a world map together?** [Play the complete Godot world map and download its editable project](https://small-hours-assets.vercel.app/guides/godot-world-map?utm_source=github_dispatch_map). It shows a route made from tiles, terrain symbols and a locked destination. The guide includes the asset list and the November sale link.
+
 ## License, provenance and feedback
 
 MIT; copyright 2026 yaotao3000. Commercial use, modification and redistribution are allowed with the included license notice. Code, styling, SVG icons and documentation were made with AI assistance. The preview is actual Godot output. No competitor assets or extra font files are included.
